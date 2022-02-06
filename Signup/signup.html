@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+      <link rel="stylesheet" href="signup.css">
+    <script src="signup_form.js"></script>
+
+     <!-- <script >
+         function passwordChanged() {
+            let strength = document.getElementById('strength');
+             let strongRegex = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+             let mediumRegex = new
+             RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.{8,}))');
+            //  var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+             let pwd = document.getElementById("password");
+             if (pwd.value.length == 0) {
+                 strength.innerHTML = 'Type Password';
+             } 
+            // else if (false == enoughRegex.test(pwd.value)) {
+            // strength.innerHTML = 'More Characters';
+             else if (mediumRegex.test(pwd.value)) {
+                 strength.innerHTML = '<span style="color:orange">Medium!</span>';
+             } 
+             else if (strongRegex.test(pwd.value)) {
+             strength.innerHTML = '<span style="color:green">Strong!</span>';
+
+             }else {
+                 strength.innerHTML = '<span style="color:red">Weak!</span>';
+             }
+         }
+        
+     </script> -->
+
+     <!-- <script>
+          let timeout;
+
+          // traversing the DOM and getting the input and span using their IDs
+
+          let password = document.getElementById('password')
+          let strengthBadge = document.getElementById('strength')
+
+          // The strong and weak password Regex pattern checker
+
+          let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+          let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+
+          function StrengthChecker(PasswordParameter){
+          // We then change the badge's color and text based on the password strength
+
+          if(strongPassword.test(PasswordParameter)) {
+          strengthBadge.style.backgroundColor = "green"
+          strengthBadge.textContent = 'Strong'
+          } else if(mediumPassword.test(PasswordParameter)){
+          strengthBadge.style.backgroundColor = 'blue'
+          strengthBadge.textContent = 'Medium'
+          } else{
+          strengthBadge.style.backgroundColor = 'red'
+          strengthBadge.textContent = 'Weak'
+          }
+          }
+
+          // Adding an input event listener when a user types to the password input
+
+          password.addEventListener("input", () => {
+
+          //The badge is hidden by default, so we show it
+
+          strengthBadge.style.display= 'block'
+          clearTimeout(timeout);
+
+          //We then call the StrengChecker function as a callback then pass the typed password to it
+
+          timeout = setTimeout(() => StrengthChecker(password.value), 500);
+
+          //Incase a user clears the text, the badge is hidden again
+
+          if(password.value.length !== 0){
+          strengthBadge.style.display != 'block'
+          } else{
+          strengthBadge.style.display = 'none'
+          }
+          });
+     </script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-xs-12">
+                <div class=" col-md-6 col-sm-xs-6">
+                    <form   action="Login.html"   class="box"  onsubmit="return validate()">
+                        <!-- onsubmit="return validate()" -->
+                         <h1>SIGNUP</h1>
+                          <p> Please fill in this form to create an Account</p>
+                         
+                         <!-- <input type="text" name=""
+                            placeholder="Fullname">
+                            <input type="text" name="" placeholder="Email">
+                            <input type="tel" name="" placeholder="Mobile"
+                                pattern="[0-9]{3}[-\s\.][0-9]{3}[-\s\.][0-9]{4}" required>
+                             <input type="password" name="" placeholder="Password"
+                                 onkeyup="passwordChanged()"  id="password">
+                             <span id="strength" class="badge "></span>
+                          
+                              <input type="password" name="" placeholder="Re-type Password"/>
+                            <input type="submit" name=""
+                            value="Register" href="#"/>
+                            <label class="text-white">Already a member?</label>
+                            <a class=" text-muted" href="Login.html">Sign In</a> -->
+
+                            <div class="form-input">
+                               <ion-icon name="person"></ion-icon>
+                                <input id="fname" name="fname" placeholder="First Name" type="text"  />
+                                <small>Error mssg</small>
+                            </div>
+                             <div class="form-input">
+                                 <ion-icon name="person"></ion-icon>
+                                 <input id="Lname" name="lname" placeholder="Last Name" type="text"/>
+                                 <small>Error mssg</small>
+                             </div>
+                                <div class="form-input">
+                                    <ion-icon name="mail"></ion-icon>
+                                    <input id="email"  name="email" placeholder="Email" type="email" />
+                                    <small>Error mssg</small>
+                                </div>
+                               <div class="form-input">
+                                   <ion-icon name="phone-portrait"></ion-icon>
+                                   <input id="mobile" placeholder="Mobile" type="text"  />
+                                   <small>Error mssg</small>
+                               </div>
+                                  <div class="form-input">
+                                     <ion-icon name="lock-closed"></ion-icon>
+                                      <input id="password" placeholder="Password" type="password" 
+                                          onkeyup="return passwordChanged()" />
+                                          <small>Error msg</small>
+                                      <span id="strength"></span>
+                                      <!-- <span class="eye" onclick="myfn()">
+                                          <i id="hide1" class="icon ion-ios-eye"></i>
+                                          <i id="hide2" class="icon ion-ios-eye-off"></i>
+                                      </span> -->
+                                  
+                                  </div>
+                               <div class="form-input">
+                                   <ion-icon name="lock-open"></ion-icon>
+                                   <input id="re_password" placeholder="Re-type password" type="password" />
+                                   <small>Error mssg</small>
+                               </div>
+
+                             <div class="form-input">
+                                 <input type="submit"  name="" value="Register"   />
+                                 <label class="mt-3">Already a member?</label>
+                                 <a class=" text-muted" href="Login.html">Sign In</a>
+                             </div>
+                               
+            
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>

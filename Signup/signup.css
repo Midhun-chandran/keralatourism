@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: linear-gradient(to right, #b92b27, #1565c0) */
+    background: url(../images/katha.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+/* body {
+    background-color: lightgreen;
+} */
+
+
+
+.box {
+    width: 350px;
+    padding: 10px;
+    position: absolute;
+    left: 580px;
+    background: transparent;
+    margin-top: 20px;
+
+    text-align: center;
+    transition: 0.25s;
+
+}
+
+.form-input {
+    position: relative;
+
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"] {
+    border: 0;
+    background: none;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    margin-top: 7px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus,
+.box input[type="email"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin-top: 10px;
+    margin-left: 90px;
+    border: #3498db 2px solid;
+    text-align: center;
+    background: #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #19ad57
+}
+
+small {
+    display: none;
+    position: relative;
+    /* right: 80px; */
+}
+
+ion-icon {
+    color: rgb(0, 0, 0);
+}
+
+.forgot {
+    text-decoration: underline
+}
+
+.eye {
+    float: right;
+    cursor: pointer;
+    transform: translateY(00%);
+    font-size: 20px;
+    position: absolute;
+    left: 249px;
+    bottom: 30px;
+    border: 1px solid;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #110707, #1565c0)
+    }
+
+    .box {
+        width: 400px;
+        padding: 40px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background: #191919;
+        ;
+        text-align: center;
+        transition: 0.25s;
+        margin-top: 100px
+    }
+
+}

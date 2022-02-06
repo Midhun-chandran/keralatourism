@@ -1,0 +1,212 @@
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2 {
+  text-align: center;
+  background-color: rgb(53, 72, 105);
+
+
+}
+
+#cards_landscape_wrap-2 .container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+#cards_landscape_wrap-2 a {
+  text-decoration: none;
+  outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+  background: #110f16;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  width: 100%;
+  height: 200px;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box {
+  text-align: center;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+  padding: 30px 18px;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+  background: #110f16;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+ 
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+  background: #110f16;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.btn-center{
+  position: fixed;
+
+  top: 8%;
+  z-index: 2;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+text-align:left;
+  color: #6a617c;
+}
+
+.nav1{
+background: rgb(53, 72, 105);
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+
+}
+.nav_home{
+  z-index: 2;
+
+}
+.nav_dist{
+background: rgb(53, 72, 105);
+overflow: hidden;
+
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 20;
+padding-left: 9%;
+padding-right: 8%;
+}
+
+.logo img{
+  height:100px;
+  width: 100px;
+}
+
+.sub-btn{
+  /* background-color: 
+  color: white;
+  padding: 3px */
+  background-color: #6a617c;
+  color: rgb(216, 205, 205);
+  height: 30px;
+  border: none;
+  vertical-align: middle;
+  font-size: 12px;
+  border-radius: 0;
+}
+.news-sec{
+  background-color: rgb(28, 26, 29);
+  color: rgb(128, 128, 128) ;
+  padding-top: 1% ; 
+  position: relative;
+ 
+
+}
+.copyright{
+  border-top: 1px solid hsla(0, 0%, 100%, .2);
+  width: 100%;
+  padding-left: 6%;
+  
+
+}
+.copyright ul{
+list-style: none;
+display: inline;
+padding-left: 150px;
+
+}
+.copyright p{
+   padding-top: 1%;
+   display: inline-block;
+
+}
+.copyright p,li {
+ padding-top: 1%;
+ display: inline-block;
+ margin-right: 30px;
+
+}
+.news-div{
+   padding-left: 6%;
+}
+
+.news-div input{
+font-size: 12px;
+  height: 30px;
+}
+.social-logo{
+  padding-left: 5%;
+  position: relative;
+}
+
+.logo_img{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  top: 75%;
+  left:7%
+}
+.icon i{
+  margin-right: 10px;
+}
+.addres-div{
+  position: absolute;
+  top: 60px;
+  right: 200px;
+}
